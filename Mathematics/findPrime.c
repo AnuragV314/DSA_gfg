@@ -31,7 +31,8 @@ int main()
 
 int findPrime(int n)
 {
-    for (int i = 0; i <= n/2; i++)
+    // for (int i = 0; i <= n/2; i++)
+    for (int i = 0; i * i <= n; i++)
     {
         if ((6 * i + 1) == n || (6 * i - 1) == n)
             return 1;
