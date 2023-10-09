@@ -112,23 +112,44 @@ import java.util.*;
 // JAVA - Delete  
 // -simple
 
-class ArrayListA {
-    static int deleteEle(int arr[], int n, int x) {
-        int i;
-        for (i = 0; i < n; i++)
-            if (arr[i] == x)
-                break;
-        if (i == n)
-            return n;
-        for (int j = i; j < n - 1; j++)
-            arr[j] = arr[j + 1];
-        return n - 1;
-    }
-    public static void main(String[] args) {
-        int arr[] = {3, 8, 12, 5, 6}, x = 12, n = 5;
-        n = deleteEle(arr, n, x);
-        for(int i=0; i < n; i++)
-       		System.out.print(arr[i]+" ");
+// class ArrayListA {
+//     static int deleteEle(int arr[], int n, int x) {
+//         int i;
+//         for (i = 0; i < n; i++)
+//             if (arr[i] == x)
+//                 break;
+//         if (i == n)
+//             return n;
+//         for (int j = i; j < n - 1; j++)
+//             arr[j] = arr[j + 1];
+//         return n - 1;
+//     }
+//     public static void main(String[] args) {
+//         int arr[] = {3, 8, 12, 5, 6}, x = 12, n = 5;
+//         n = deleteEle(arr, n, x);
+//         for(int i=0; i < n; i++)
+//        		System.out.print(arr[i]+" ");
        
+//     }
+// }
+
+// ---------------------------------------------------------------
+// - with Function - remove()
+
+class ArrayListA {
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+       arr.add(12);
+       arr.add(125);
+       arr.add(142);
+       arr.add(129);
+
+       arr.remove(0);
+
+        
+        for(int i:arr){
+            System.out.println(i);
+        };
     }
 }
+
