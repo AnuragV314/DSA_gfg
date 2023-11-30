@@ -1,6 +1,6 @@
 class CountChar{
-    public static void main(String[] args) {
-        String str = "geekforgeeks";
+    public static void main(StringJava[] args) {
+        String str = new String("geekforgeeks");
         int[] count = new int[26];
 
         for (int i =0; i<str.length(); i++){
