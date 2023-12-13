@@ -3,13 +3,13 @@
  */
 
 // class Node {
-//     int data;
-//     Node next;
+// int data;
+// Node next;
 
-//     Node(int item) {
-//         data = item;
-//         next = null;
-//     }
+// Node(int item) {
+// data = item;
+// next = null;
+// }
 // }
 
 class Node {
@@ -28,15 +28,15 @@ public class SimpleLLlmplementation {
         if (head == null) {
             return;
         }
-        System.out.print(head.data +" ");
+        System.out.print(head.data + " ");
         travalLL(head.next);
     }
 
     public static void main(String[] args) {
         Node head = new Node(1, new Node(2, new Node(3, null)));
         // while (head.next != null) {
-        //     System.out.print(head.data + " ");
-        //     head = head.next;
+        // System.out.print(head.data + " ");
+        // head = head.next;
         // }
         // System.out.print(head.data);
         // System.out.println();
