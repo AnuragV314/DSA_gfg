@@ -9,6 +9,7 @@ class Node {
 }
 
 public class InsertEnding {
+    
     static Node insertEnd(Node head, int x) {
         Node temp = new Node(x);
         if (head == null)
