@@ -10,6 +10,7 @@ class Node {
 
 public class SearchLL {
 
+    // Iterative
     static int searchNode(Node head, int x) {
         int pos = 1;
         Node curr = head;
@@ -24,6 +25,7 @@ public class SearchLL {
         return -1;
     }
 
+    // Recursive
     static int search(Node head , int x){
         if(head == null) return -1;
         if(head.data == x) return 1;
